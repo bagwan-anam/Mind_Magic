@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mind Reading Magic Trick</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1 id="heading"> <img src="asset/magic-crystal-ball.png" alt="crystal-ball" style="margin: -12px; margin-left: 30px;"> Mind Reading Magic</h1>
+  <!-- INTRO CARD -->
+  <div class="intro-box" id="intro-box">
+    <h2> <img src="asset/magic-cap.png" alt="magic-cap" style="width: 25%; margin-top: -30px;"><br>Think of a one  number between <br><strong> 1 to 31 </strong> <br>And give answer honestly...<br>  And see the magic !
+       <br> <img src="asset/magic-wand.png" alt="magic-wand" style="width: 18%; margin-top: 10px;"  >
+    </h2>
+   <p>Are you ready ? </p>
+    <button class="start-btn" onclick="startTrick()">Start </button>
+  </div>
+
+  <!-- MAIN CARD -->
+  <div class="card-box" id="card-box">
+    <div class="card-title" id="card-title">Card 1</div>
+    <div id="card-question"><img src="asset/mind-bulb.png" alt="mind-bulb" id="thinking" style="width: 20%; margin-left: -25px;"> Is your number in this card ?</div>
+    <div class="grid" id="card-grid"></div>
+  </div>
+
+  <!-- YES/NO BUTTONS -->
+  <div id="buttons" style="display: none;">
+    <button class="yes-btn" onclick="recordAnswer(true)">Yes</button>
+    <button class="no-btn" onclick="recordAnswer(false)">No</button>
+  </div>
+
+  <!-- FINAL RESULT CARD -->
+  <div class="card-box" id="result-card">
+    <div class="card-title"><img src="asset/icons-magic-star.png" alt="star"> Result <img src="asset/icons-magic-star.png" alt="star"></div>
+    <div id="final-answer"> You were thinking of : ??</div>
+<br>
+<button class="try-again-btn" onclick="resetTrick()">Try Again <img src="asset/icon-refresh.png" alt="refresh" id="refresh"></button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
