@@ -23,7 +23,7 @@ body {
       font-size:60px;
       font-weight: 400;
       text-transform: uppercase;
-      background: linear-gradient(30deg, rgb(207, 210, 205), #c5c5c5,rgb(255, 255, 255),rgb(255, 255, 255));
+      background: linear-gradient(30deg, rgb(180, 180, 180), #c5c5c5,rgb(255, 255, 255),rgb(255, 255, 255));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
